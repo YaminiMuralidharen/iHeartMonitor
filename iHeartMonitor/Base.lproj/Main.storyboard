@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rq8-VL-FqN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rq8-VL-FqN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,14 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iHeartMonitorFirstPage" highlightedImage="iHeartMonitorFirstPage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-uJ-EOq">
-                                <rect key="frame" x="0.0" y="135" width="375" height="488"/>
+                                <rect key="frame" x="0.0" y="135" width="375" height="532"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="532" id="zoy-dZ-CaS"/>
                                 </constraints>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-2h-LZ3">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="667" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="TGa-bM-c5F"/>
                                 </constraints>
@@ -181,65 +176,50 @@
             </objects>
             <point key="canvasLocation" x="556" y="1059"/>
         </scene>
-        <!--HeartRate View Controller -->
+        <!--HeartRate View Controller-->
         <scene sceneID="2Cp-fJ-r5e">
             <objects>
-                <viewController title="HeartRate View Controller " id="9iC-es-cbA" customClass="HeartRateViewController" customModule="iHeartMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HeartRate View Controller " id="9iC-es-cbA" userLabel="HeartRate View Controller" customClass="HeartRateViewController" customModule="iHeartMonitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KTy-fA-gRP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wQS-Ef-sJa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wQS-Ef-sJa">
                                 <rect key="frame" x="62" y="51" width="62" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="jgg-1O-BoR"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iHeartMonitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5f-5J-NWe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iHeartMonitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5f-5J-NWe">
                                 <rect key="frame" x="148" y="63" width="211" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="vSh-Zc-LdF"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-iM-Bwy">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfy-pE-HyZ" userLabel="LineChart" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="190" width="343" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pT0-eK-OD0">
                                 <rect key="frame" x="16" y="154" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Hour"/>
                                     <segment title="Day"/>
                                     <segment title="Week"/>
                                     <segment title="Month"/>
-                                    <segment title="Year"/>
                                 </segments>
+                                <connections>
+                                    <action selector="chartToggle:" destination="9iC-es-cbA" eventType="valueChanged" id="RAr-Bp-IWw"/>
+                                </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfy-pE-HyZ" userLabel="LineChart" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="190" width="343" height="210"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="O5f-5J-NWe" firstAttribute="leading" secondItem="wQS-Ef-sJa" secondAttribute="trailing" constant="24" id="0p0-SC-aes"/>
-                            <constraint firstItem="wQS-Ef-sJa" firstAttribute="centerY" secondItem="O5f-5J-NWe" secondAttribute="centerY" id="DUf-ko-sNn"/>
-                            <constraint firstItem="sfy-pE-HyZ" firstAttribute="top" secondItem="nbh-iM-Bwy" secondAttribute="bottom" constant="8" symbolic="YES" id="KOK-YW-DHS"/>
-                            <constraint firstItem="huy-4W-dls" firstAttribute="bottom" secondItem="sfy-pE-HyZ" secondAttribute="bottom" constant="218" id="Oeq-nt-KMz"/>
-                            <constraint firstItem="nbh-iM-Bwy" firstAttribute="top" secondItem="wQS-Ef-sJa" secondAttribute="bottom" constant="45" id="RHe-ia-ZD6"/>
-                            <constraint firstItem="wQS-Ef-sJa" firstAttribute="top" secondItem="huy-4W-dls" secondAttribute="top" constant="31" id="bVM-QQ-BMM"/>
-                            <constraint firstItem="nbh-iM-Bwy" firstAttribute="trailing" secondItem="sfy-pE-HyZ" secondAttribute="trailing" id="hxe-Ro-Ae4"/>
-                            <constraint firstItem="O5f-5J-NWe" firstAttribute="trailing" secondItem="KTy-fA-gRP" secondAttribute="trailingMargin" id="l7o-pE-UKi"/>
-                            <constraint firstItem="O5f-5J-NWe" firstAttribute="top" secondItem="huy-4W-dls" secondAttribute="top" constant="43" id="p6a-X2-mOM"/>
-                            <constraint firstItem="wQS-Ef-sJa" firstAttribute="leading" secondItem="huy-4W-dls" secondAttribute="leading" constant="62" id="qUq-Or-4G5"/>
-                            <constraint firstItem="O5f-5J-NWe" firstAttribute="trailing" secondItem="nbh-iM-Bwy" secondAttribute="trailing" id="uLL-MS-UkL"/>
-                            <constraint firstItem="nbh-iM-Bwy" firstAttribute="leading" secondItem="KTy-fA-gRP" secondAttribute="leadingMargin" id="x4E-Bb-Atr"/>
-                            <constraint firstItem="nbh-iM-Bwy" firstAttribute="leading" secondItem="sfy-pE-HyZ" secondAttribute="leading" id="zYd-fe-r81"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="huy-4W-dls"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="HeartRate" image="heartNavIcon" selectedImage="heartNavIcon" id="mO7-bW-KTa"/>
                     <connections>
                         <outlet property="HeartRateLineChartView" destination="sfy-pE-HyZ" id="EHw-T9-3DI"/>
+                        <outlet property="LineChartView2" destination="sfy-pE-HyZ" id="9mK-va-VID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1g-T6-IFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
